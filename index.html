@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>AI English Trainer</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div id="loginPage">
+
+<h2>Login</h2>
+
+<input type="text" id="username" placeholder="Enter your name">
+
+<button onclick="login()">Start Learning</button>
+
+</div>
+
+
+<div id="app" style="display:none">
+
+<header>
+
+<h1>🤖 AI English Trainer</h1>
+
+<p id="streak">🔥 Streak: 0</p>
+
+</header>
+
+
+<div class="container">
+
+<h2>Lessons</h2>
+
+<div class="lesson-grid">
+
+<div class="lesson-card" onclick="completeLesson()">Greetings</div>
+
+<div class="lesson-card" onclick="completeLesson()">Introduce Yourself</div>
+
+<div class="lesson-card" onclick="completeLesson()">Daily English</div>
+
+<div class="lesson-card" onclick="completeLesson()">Travel English</div>
+
+</div>
+
+
+<h2>Chat Practice</h2>
+
+<div class="chat-box" id="chatBox">
+
+<p class="ai">Hello! Let's practice English.</p>
+
+</div>
+<h2>Pronunciation Practice</h2>
+
+<p id="targetSentence">Say: "Hello, how are you?"</p>
+
+<button onclick="startPronunciation()">🎤 Speak Sentence</button>
+
+<p id="speechResult"></p>
+
+<p id="score"></p>
+
+
+<div class="input-area">
+
+<input type="text" id="userInput" placeholder="Type or speak">
+
+<button onclick="sendMessage()">Send</button>
+
+<button onclick="startVoice()">🎤</button>
+
+</div>
+
+
+<h2>Leaderboard</h2>
+
+<ul id="leaderboard"></ul>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
